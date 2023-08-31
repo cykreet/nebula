@@ -1,0 +1,9 @@
+{
+  "verifyToken": "h0$VjIW5Lt%gx7$E&cYlDPRzJHIWV9",
+  "whatsappToken": "whatsappToken",
+  "contentful": {
+    "spaceId": "spaceId",
+    "token": "token"
+  },
+  "initiators": []
+}

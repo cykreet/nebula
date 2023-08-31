@@ -1,0 +1,225 @@
+{
+  "name": "Response",
+  "description": "",
+  "displayField": "identifier",
+  "fields": [
+    {
+      "id": "identifier",
+      "name": "Identifier",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "validations": [
+        {
+          "unique": true
+        },
+        {
+          "size": {
+            "max": 30
+          }
+        }
+      ],
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "header",
+      "name": "Header",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "validations": [
+        {
+          "size": {
+            "max": 60
+          }
+        }
+      ],
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "content",
+      "name": "Content",
+      "type": "Text",
+      "localized": false,
+      "required": true,
+      "validations": [
+        {
+          "size": {
+            "max": 1024
+          }
+        }
+      ],
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "validations": [
+        {
+          "size": {
+            "max": 60
+          }
+        }
+      ],
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "interactionType",
+      "name": "Interaction Type",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "validations": [
+        {
+          "in": ["Buttons", "List"]
+        }
+      ],
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "interactions",
+      "name": "Interactions",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "validations": [
+        {
+          "size": {
+            "max": 10
+          }
+        }
+      ],
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": ["response"]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    },
+    {
+      "id": "media",
+      "name": "Media",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "validations": [
+        {
+          "assetFileSize": {
+            "min": null,
+            "max": 16777216
+          }
+        }
+      ],
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Asset"
+    },
+    {
+      "id": "interactionTitle",
+      "name": "Interaction Title",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "validations": [
+        {
+          "size": {
+            "max": 24
+          }
+        }
+      ],
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "interactionDescription",
+      "name": "Interaction Description",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "validations": [
+        {
+          "size": {
+            "max": 72
+          }
+        }
+      ],
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "listTitle",
+      "name": "List Title",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "validations": [
+        {
+          "size": {
+            "max": 24
+          }
+        }
+      ],
+      "disabled": false,
+      "omitted": false
+    }
+  ],
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "fixvv9s3mp7u"
+      }
+    },
+    "id": "response",
+    "type": "ContentType",
+    "createdAt": "2023-01-17T16:50:57.656Z",
+    "updatedAt": "2023-02-01T18:09:37.184Z",
+    "environment": {
+      "sys": {
+        "id": "master",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "publishedVersion": 65,
+    "publishedAt": "2023-02-01T18:09:37.184Z",
+    "firstPublishedAt": "2023-01-17T16:50:58.176Z",
+    "createdBy": {
+      "sys": {
+        "type": "Link",
+        "linkType": "User",
+        "id": "7p8GYp7YRglN3uQBEiLQpw"
+      }
+    },
+    "updatedBy": {
+      "sys": {
+        "type": "Link",
+        "linkType": "User",
+        "id": "7p8GYp7YRglN3uQBEiLQpw"
+      }
+    },
+    "publishedCounter": 33,
+    "version": 66,
+    "publishedBy": {
+      "sys": {
+        "type": "Link",
+        "linkType": "User",
+        "id": "7p8GYp7YRglN3uQBEiLQpw"
+      }
+    }
+  }
+}
